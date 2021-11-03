@@ -1,0 +1,46 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+
+*** Running vivado
+    with args -log controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source controller.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source controller.tcl -notrace
+Command: synth_design -top controller -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19640
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'op' when default_nettype is none [C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv:45]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'func' when default_nettype is none [C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv:46]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'Z' when default_nettype is none [C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv:47]
+ERROR: [Synth 8-6735] net type must be explicitly specified for 'enable' when default_nettype is none [C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv:48]
+INFO: [Synth 8-2350] module controller ignored due to previous errors [C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv:44]
+Failed to read verilog 'C:/Users/samum/Comp541/Lab8/Lab8.srcs/sources_1/new/controller.sv'
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 26 19:31:00 2021...
